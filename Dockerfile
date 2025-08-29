@@ -13,7 +13,7 @@
 # limitations under the License.
 
 FROM gcr.io/oss-fuzz-base/base-builder
-RUN mkdir $SRC/oss-fuzz-auto
+RUN mkdir $SRC/jsmn
 COPY build.sh $SRC/
-COPY *.c *.h $SRC/oss-fuzz-auto/
-WORKDIR $SRC/oss-fuzz-auto
+COPY *.c *.h $SRC/jsmn/
+WORKDIR $SRC/jsmn
